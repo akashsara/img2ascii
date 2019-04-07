@@ -1,10 +1,14 @@
 # img2ascii
 
+![example](https://raw.githubusercontent.com/akashsara/img2ascii/master/output/cover.jpg)
+
 ---
 
 ## What is it?
 
 It converts an [image](https://github.com/akashsara/img2ascii/blob/master/output/test.jpg) into a text file containing an equivalent ASCII [image](https://raw.githubusercontent.com/akashsara/img2ascii/master/output/luminosity.txt). (If the text file looks like gibberish, zoom out as much as you can). The code is modular and can easily be modified. You can also include this in your own packages by adding this file in and importing it. I've commented it enough that everything should make sense, but open up an issue if you have trouble understanding it.
+
+> image is from [Unsplash](https://unsplash.com/). It's a website that hosts a ton of free to use images. 100% totally free. The particular [image](https://unsplash.com/photos/lOYyakxnMu0) I used is by Zdeněk Macháček.
 
 ## Installation
 
