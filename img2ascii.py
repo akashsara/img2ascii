@@ -58,6 +58,9 @@ def rgb_to_brightness(image, mode):
     return np.array(new_image)
        
 def invert_image(image):
+    """
+    Inverts the image. Basically turns 0 to 255 and 255 to 0. Everything inbetween undergoes a similar transformation. Remember that image here is a numpy array, so the below code applies it to every entry in the array. 
+    """
     return 255 - image
        
 def pixel_to_ascii(image, ascii_scale):
@@ -100,8 +103,8 @@ if __name__ == '__main__':
     """
     parser = argparse.ArgumentParser(description='Convert an image into ASCII.')
     parser.add_argument('location', metavar='location', help='location of the image to convert.')
-    parser.add_argument('-mode', metavar='mode', help='type of rgb to brightness conversion.', default='average', choices=['average', 'luminosity', 'min_max', 'max', 'min'])
-    parser.add_argument('-scale', metavar='scale', help='scale of brightness/character set to use', default="`^\",:;Il!i~+_-?][}{1)(|\\/tfjrxnuvczXYUJCLQ0OZmwqpdbkhao*#MW&8%B@$")
+    parser.add_argument('-mode', metavar='mode', help='how to convert rgb to brightness. use one of average, luminosity, min_max, max, min.', default='average', choices=['average', 'luminosity', 'min_max', 'max', 'min'])
+    parser.add_argument('-scale', metavar='scale', help='scale of brightness/character set to use. 01 would mean the image will have only 0 and 1.', default="`^\",:;Il!i~+_-?][}{1)(|\\/tfjrxnuvczXYUJCLQ0OZmwqpdbkhao*#MW&8%B@$")
     parser.add_argument('-name', metavar='name', help='name of the output file', default='output')
     parser.add_argument('--invert', help='invert the color scheme', action='store_true')
     args = parser.parse_args()
