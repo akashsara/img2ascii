@@ -101,7 +101,7 @@ if __name__ == '__main__':
     parser = argparse.ArgumentParser(description='Convert an image into ASCII.')
     parser.add_argument('location', metavar='location', help='location of the image to convert.')
     parser.add_argument('-mode', metavar='mode', help='type of rgb to brightness conversion.', default='average', choices=['average', 'luminosity', 'min_max', 'max', 'min'])
-    parser.add_argument('-scale', metavar='scale', help='scale of brightness/character to use', default="`^\",:;Il!i~+_-?][}{1)(|\\/tfjrxnuvczXYUJCLQ0OZmwqpdbkhao*#MW&8%B@$")
+    parser.add_argument('-scale', metavar='scale', help='scale of brightness/character set to use', default="`^\",:;Il!i~+_-?][}{1)(|\\/tfjrxnuvczXYUJCLQ0OZmwqpdbkhao*#MW&8%B@$")
     parser.add_argument('-name', metavar='name', help='name of the output file', default='output')
     parser.add_argument('--invert', help='invert the color scheme', action='store_true')
     args = parser.parse_args()
