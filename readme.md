@@ -19,11 +19,19 @@ It converts an [image](https://github.com/akashsara/img2ascii/blob/master/output
 
 ## Usage
 
+`
+img2ascii.py location
+			 [-h] [-mode MODE] [-scale SCALE] [-name NAME] 
+			 [--invert]
+`
+
 #### Required Arguments:
 
 `location` - Specify the path to the image to convert. This can be an absolute path or a path relative to the directory the script is running on.
 
 #### Optional Arguments:
+
+`h`: Just displays the help menu which details most of the information here.
 
 `mode MODE`: Conversion mode. Determines which method to use to convert each RGB pixel into a single brightness value. See [working](#what-does-it-actually-do) for more information. Must be one of `average`, `luminosity`, `min_max`, `max`, `min`. Default: `average`
 
